@@ -1,0 +1,68 @@
+
+<!-- Main Container with Black Background -->
+<div class="main-container">
+  <!-- Hero Section with Sample Images -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1 class="main-title">Best AI Content Platform</h1>
+      <h2 class="sub-title">Image Generator</h2>
+      <p class="description">
+        Your One-Stop Solution for Content Creation, Audio Generation, Image Crafting, & AI Chatbot Development.
+      </p>
+
+      <!-- Image Showcase Grid -->
+      <div class="image-grid">
+        <img src="assets/images/generated-img-2.jpg" alt="Image 1" class="small-img img1" />
+        <img src="assets/images/generated-img-3.jpg" alt="Image 2" class="small-img img2" />
+        <img src="assets/images/generated-img-4.jpg" alt="Image 3" class="small-img img3" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Text-to-Image Generator Input Section with Background -->
+  <div class="input-container">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Enter a text prompt:</mat-label>
+      <input matInput placeholder="Describe the image..." [(ngModel)]="prompt" />
+
+      <!-- Move the Generate button to the right side -->
+      <button mat-raised-button color="primary" class="generate-btn" (click)="generateImage()" [disabled]="!prompt || isLoading">
+        Generate Image
+      </button>
+    </mat-form-field>
+  </div>
+
+  <!-- Loading Spinner -->
+  <div *ngIf="isLoading" class="loading-spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <!-- Display Generated Image or Placeholder Card Below Input Section with Dark Background -->
+  <div class="image-card-section" *ngIf="!isLoading">
+    <div class="image-container">
+      <!-- If no image is generated, show placeholder card with text -->
+      <mat-card *ngIf="!imageUrl" class="generated-image-card placeholder-card">
+        <p class="placeholder-text">Generate Image</p>
+      </mat-card>
+
+      <!-- If image is generated, show the generated image with icons -->
+      <mat-card *ngIf="imageUrl" class="generated-image-card">
+        <div class="image-card-overlay">
+          <!-- Icon Buttons over the Image -->
+          <button mat-icon-button color="primary" (click)="downloadImage()" class="icon-overlay">
+            <mat-icon>file_download</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="reset()" class="icon-overlay">
+            <mat-icon>refresh</mat-icon>
+          </button>
+        </div>
+        <img [src]="imageUrl" class="card-img-top" alt="Generated Image" />
+      </mat-card>
+    </div>
+  </div>
+
+  <!-- Error Message -->
+  <div *ngIf="errorMessage" class="error-message">
+    <mat-error>{{ errorMessage }}</mat-error>
+  </div>
+</div>

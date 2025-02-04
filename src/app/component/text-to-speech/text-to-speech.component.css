@@ -1,0 +1,19 @@
+mat-card {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+mat-form-field {
+  display: block;
+  margin-bottom: 16px;
+}
+
+button {
+  width: 100%;
+}
+
+mat-progress-spinner {
+  margin-top: 16px;
+}

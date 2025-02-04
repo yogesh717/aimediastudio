@@ -1,0 +1,25 @@
+<div class="container">
+    <h1>Convert Image and Audio to Video</h1>
+  
+    <!-- Image Upload -->
+    <div>
+      <label for="image-upload">Upload Image</label>
+      <input type="file" id="image-upload" (change)="onImageUpload($event)" />
+    </div>
+  
+    <!-- Audio Upload -->
+    <div>
+      <label for="audio-upload">Upload Audio</label>
+      <input type="file" id="audio-upload" (change)="onAudioUpload($event)" />
+    </div>
+  
+    <!-- Convert Button -->
+    <button (click)="convertToVideo()">Convert to MP4</button>
+  
+    <!-- Video Preview -->
+    <div *ngIf="videoUrl">
+      <h2>Preview:</h2>
+      <video [src]="videoUrl" controls></video>
+    </div>
+  </div>
+  

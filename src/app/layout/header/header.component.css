@@ -1,0 +1,99 @@
+/* Global Dark Theme Styling */
+
+.container-wrapper {
+  max-width: 1200px;
+  background: black;
+  /* margin: 0 auto; */
+  padding: 20px;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: black;
+  color: #ffffff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Glowing Background Elements */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+
+
+/* Header Styling */
+.custom-header {
+  background: linear-gradient(to right, #1f1f1f, #2a2a2a);
+  color: #ffffff;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.8rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Add this style for the button's hover effect */
+.login-btn {
+  color: #ffffff; /* Makes the text white */
+  border: 1px solid #afa6a6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #ffffff;
+  color: #574444; /* Dark color for text when hovered */
+}
+
+
+/* Navigation Section */
+.navigation-section {
+  background: #41343f;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #b0b0b0;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding: 0.2rem 0;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ff5722;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}

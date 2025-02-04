@@ -1,0 +1,139 @@
+<!-- <div class="background-overlay">
+  <div class="glowing-circle one"></div>
+  <div class="glowing-circle two"></div>
+  <div class="glowing-circle three"></div>
+</div>
+
+<mat-toolbar class="custom-header">
+  <div class="header-left">
+   
+    <span class="title">AI Media Studio</span>
+  </div>
+  <div class="header-right">
+    <button mat-button class="login-btn">Login</button>
+  </div>
+</mat-toolbar>
+
+<div class="navigation-section">
+  <nav class="nav-menu">
+    <a routerLink="/" class="nav-link active">Home</a>
+    <a routerLink="/tts" class="nav-link">tts</a>
+    <a routerLink="/text-to-image" class="nav-link">ImageGenerat</a>
+    <a routerLink="/image-audio-to-video" class="nav-link">IA2V</a>
+  </nav>
+</div> -->
+
+
+<!-- Hero Section -->
+<div class="hero-section">
+  <div class="hero-content">
+    <h1 class="main-title">Welcome to AI Media Studio</h1>
+    <h2 class="sub-title">Select a feature to get started</h2>
+    <p class="description">
+      Your One-Stop Solution for Content Creation, Audio Generation, Image Crafting, & AI Chatbot Development.
+    </p>
+
+    <div class="input-container">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>An Astronaut riding a horse on Mars, HD</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <button mat-raised-button color="primary" class="generate-btn">Generate</button>
+    </div>
+
+    <div class="tags">
+      <button mat-stroked-button>Creative</button>
+      <button mat-stroked-button>Sport</button>
+      <button mat-stroked-button>Animation</button>
+      <button mat-stroked-button>Fantasy</button>
+    </div>
+  </div>
+</div>
+
+<div class="container-wrapper">
+
+  <!-- Image Card Section -->
+  <div class="image-card-section">
+    <!-- Left Section -->
+    <div class="left-section">
+      <div class="image-container">
+        <img src="assets/images/bot1.jpg" alt="Main Image" class="main-img" />
+      </div>
+
+      <div class="text-container">
+        <h2>We are passionate about empowering creatives</h2>
+        <p>
+          ...with the tools they need <span class="highlight">to bring their vision</span> to life, that's why we have
+          developed.
+        </p>
+        <button class="community-btn">Join Community</button>
+        <p class="stats">80k+ <span class="emoji">😊</span> Happy Customers</p>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right-section">
+      <div class="image-grid">
+        <img src="assets/images/generated-img-2.jpg" alt="Image 1" class="small-img img1" />
+        <img src="assets/images/generated-img-3.jpg" alt="Image 2" class="small-img img2" />
+        <img src="assets/images/generated-img-4.jpg" alt="Image 3" class="small-img img3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-container">
+    <div class="image-section">
+      <img src="assets/images/welcome-img.png" alt="AI Generated Cat" />
+    </div>
+    <div class="text-section">
+      <h3>Welcome</h3>
+      <h1>Powerful AI Features <br> Built for <span class="highlight">Marketing</span></h1>
+      <p>
+        We are passionate about empowering creatives with the tools they need to bring their vision to life.
+      </p>
+      <p>
+        Working globally with the largest brands, we believe that safe. We combine ideas, behaviors, and insights that
+        customers love.
+      </p>
+      <ul>
+        <li><mat-icon>check_circle</mat-icon> Intelligent image editing</li>
+        <li><mat-icon>check_circle</mat-icon> Customizable image styles</li>
+        <li><mat-icon>check_circle</mat-icon> Unprecedented Image Creation</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="creative-container">
+    <div class="creative-text d-flex">
+      <h1>Supercharge your Creative <br>Shapes as well</h1>
+      <p class="creative-approach">
+        We are passionate about empowering creatives with the tools they need to bring their vision to life.
+      </p>
+    </div>
+
+    <div class="row-layout">
+      <div class="card" *ngFor="let feature of feature">
+        <mat-icon>{{ feature.icon }}</mat-icon>
+        <h2>{{ feature.title }}</h2>
+        <p>{{ feature.description }}</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card-container">
+    <mat-card class="card-bord" *ngFor="let card of cards">
+      <mat-card-header>
+        <div class="circle">
+          <img mat-card-avatar [src]="card.image" alt="Image" />
+        </div>
+      </mat-card-header>
+      <mat-card-content>
+        <h3>{{ card.text }}</h3>
+      </mat-card-content>
+    </mat-card>
+
+  </div>
+
+
+</div>
