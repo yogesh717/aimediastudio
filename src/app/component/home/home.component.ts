@@ -44,7 +44,7 @@ import { features } from 'node:process';
 
 export class HomeComponent   {
 
- feature = [
+  feature = [
     { icon: 'chat', title: 'Excellent Support', description: 'We are passionate about empowering creatives with the tools they need to bring their vision to life.' },
     { icon: 'verified', title: 'Reliable Expert', description: 'We are passionate about empowering creatives with the tools they need to bring their vision to life.' },
     { icon: 'memory', title: 'Unique Technology', description: 'We are passionate about empowering creatives with the tools they need to bring their vision to life.' },
@@ -52,7 +52,7 @@ export class HomeComponent   {
   ];
   cards = [
     { image: '../../../', text: 'Card 1' },
-    { image: 'https://writebot-react.themetags.net/img/blog-img-2.jpg', text: 'Card 2' },
+    { image: 'https://writebot-react.themetags.net/img/blog-img-2.jpg', text: 'We are passionate about empowering creatives with the tools they need to bring their vision to life' },
     { image: 'https://via.placeholder.com/80', text: 'Card 3' }
   ];
 

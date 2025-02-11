@@ -1,6 +1,48 @@
+
+/* Hero Section Styling */
+.hero-section {
+  background-image: url("../../../assets/images/ai-studio-banner.png");
+  /* background: radial-gradient(circle at center, #5e3e5c, #7c3f6f); */
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+}
+
+.sub-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ff5722;
+  margin: 0.5rem 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  margin: 1rem 0 2rem;
+}
+
+
+
+
 mat-card {
+  background: black;
   max-width: 500px;
   margin: auto;
+  color: white;
   text-align: center;
   padding: 20px;
 }

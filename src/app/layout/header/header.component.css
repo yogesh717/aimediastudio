@@ -29,8 +29,6 @@ body, html {
   overflow: hidden;
 }
 
-
-
 /* Header Styling */
 .custom-header {
   background: linear-gradient(to right, #1f1f1f, #2a2a2a);
@@ -53,47 +51,50 @@ body, html {
   font-weight: bold;
 }
 
-/* Add this style for the button's hover effect */
+
 .login-btn {
-  color: #ffffff; /* Makes the text white */
+  color: #ccc8c8 !important; 
   border: 1px solid #afa6a6;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .login-btn:hover {
-  background-color: #ffffff;
-  color: #574444; /* Dark color for text when hovered */
+  background-color: #ffffff !important;
+  color: #635656 !important; 
 }
 
-
-/* Navigation Section */
+/* Glassmorphism Navigation Bar */
 .navigation-section {
-  background: #41343f;
+  background: rgba(0, 0, 0, 0.2); 
   text-align: center;
-  padding: 1rem 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  /* padding: 1rem 0; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 10px; 
 }
 
+/* Navigation Menu */
 .nav-menu {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
+/* Navigation Links with Glow Effect */
 .nav-link {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #b0b0b0;
+  color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s, border-bottom 0.3s;
+  transition: color 0.3s, text-shadow 0.3s;
   padding: 0.2rem 0;
+  /* text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+ */
 }
 
-.nav-link.active {
-  color: #ffffff;
-  border-bottom: 2px solid #ff5722;
-}
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #c5c1b1;
+  text-shadow: 0 0 12px rgb(109, 104, 84); /* Increased Glow */
 }
